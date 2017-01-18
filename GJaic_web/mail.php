@@ -24,7 +24,7 @@ $body .= "Email: ".$_REQUEST['Email']." \n";
 
 ## SEND MESSGAE ##
 
-mail( $recipient, $subject, $body, "From: $sender" ) or die ("Mail could not be sent.");
+mail( $_REQUEST['Email'], $subject, $body ) or die ("Mail could not be sent.");
 
 ## SHOW RESULT PAGE ##
 
