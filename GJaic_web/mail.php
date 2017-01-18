@@ -3,7 +3,7 @@
 ## CONFIG ##
 
 # LIST EMAIL ADDRESS
-$recipient = "enter the lists email address here";
+$recipient = "gjaic23@gmail.com";
 
 # SUBJECT (Subscribe/Remove)
 $subject = "Subscribe";
@@ -24,7 +24,7 @@ $body .= "Email: ".$_REQUEST['Email']." \n";
 
 ## SEND MESSGAE ##
 
-mail( $_REQUEST['Email'], $subject, $body ) or die ("Mail could not be sent.");
+mail( $recipient, $subject, $body ) or die ("Mail could not be sent.");
 
 ## SHOW RESULT PAGE ##
 
